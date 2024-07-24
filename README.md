@@ -1,41 +1,37 @@
-# Website
+# Docusaurus Exam
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## 1 - Créer un repo Git
 
-### Installation
+## 2 - Initialisation de Docusaurus
 
-```
-$ yarn
-```
+### Créer le site Docusaurus avec la commande :
 
-### Local Development
+npx create-docusaurus@latest my-website classic
 
-```
-$ yarn start
-```
+### Pour lancer le site faite la commande : 
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+cd my-website
+npx docusaurus start
 
-### Build
+### Push le site sur Github avec la commande : 
 
-```
-$ yarn build
-```
+git add. 
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+git commit -m "add docusaurus"
 
-### Deployment
+git push
 
-Using SSH:
+### Créer une nouvelle branch appeler gh-pages
 
-```
-$ USE_SSH=true yarn deploy
-```
+### Aller sur Github dans l'onglet setting, puis Pages
 
-Not using SSH:
+### Choisir la branch gh-pages comme source de déployment
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+### Créer un fichier deploy yaml avec la config pour build le site à chaque push, bien mettre ce fichier dans un dossier .github/workflows à la racine du projet
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### commit et push le projet pour compliler le site sur Github
+
+### Faire attention d'avoir au préalable créer un tokken d'acces au projet et une variable secret action pour avoir les droits sur le projet 
+
+
+
