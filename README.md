@@ -21,3 +21,9 @@ git commit -m "add docusaurus"
 
 git push
 
+Créer une nouvelle branch appeler gh-pages
+
+Aller sur Github dans l'onglet setting, puis Pages
+
+Choisir la branch gh-pages comme source de déployment
+
